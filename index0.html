@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+html,body { height: 100%; }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #337ab7;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="jquery/jquery-3.2.1.min"></script>
+	
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+
+<ul>
+    <li class="rbx-tab active"> <a class="rbx-tab-heading" href="SmartCard.html" id="tab-limiteds" target="iframe_a">
+            <span class="rbx-lead">Smart Card</span>
+            <span class="rbx-tab-subtitle"></span>
+         </a>
+
+    </li>
+    <li class="rbx-tab"> <a class="rbx-tab-heading" href="Registration.html" id="tab-limiteds" target="iframe_a">
+                    <span class="rbx-lead">Registration</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+
+    </li>
+	<li class="rbx-tab"> <a class="rbx-tab-heading" href="Check_My_Account.html" id="tab-limiteds" target="iframe_a">
+                    <span class="rbx-lead">Check My Account</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+    </li>
+	<li class="rbx-tab"> <a class="rbx-tab-heading" href="CreatServer.html" id="tab-limiteds" target="iframe_a">
+                    <span class="rbx-lead">Create Server</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+    </li>
+	<li class="rbx-tab" style="float:right"> <a class="rbx-tab-heading" href="" id="tab-limiteds" target="iframe_a">
+                    <span class="rbx-lead">About</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+    </li>
+</ul>
+
+<!--
+<ul>
+  <li><a class="active" href="Server.html" target="iframe_a">Home</a></li>
+  <li><a href="SmartCard.html" target="iframe_a">News</a></li>
+  <li><a href="scpwupdate.html" target="iframe_a">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+-->
+<iframe   src="SmartCard.html" name="iframe_a" frameborder="0" style="overflow:hidden;height:100%;width:100%" ></iframe>
+
+<script>
+$('li a').click(function () {
+    $('li.rbx-tab').removeClass('active');
+    $(this).closest('li.rbx-tab').addClass('active');
+});
+</script>
+
+</body>
+</html>

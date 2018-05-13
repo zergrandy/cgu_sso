@@ -1,0 +1,203 @@
+<html>
+<head>
+<style>
+html,body { height: 100%; }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #337ab7;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="jquery/jquery-3.2.1.min"></script>
+</head>
+<body>
+
+
+<ul>
+    <li class="rbx-tab active"> <a class="rbx-tab-heading" href="Registration.gohtml" id="tab-limiteds" >
+                    <span class="rbx-lead">Registration</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+
+    </li>
+	<li class="rbx-tab"> <a class="rbx-tab-heading" href="Check_My_Account.gohtml" id="tab-limiteds" >
+                    <span class="rbx-lead">Check My Account</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+    </li>
+	<li class="rbx-tab"> <a class="rbx-tab-heading" href="CreatServer.gohtml" id="tab-limiteds" >
+                    <span class="rbx-lead">Create Server</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+    </li>
+	<li class="rbx-tab" style="float:right"> <a class="rbx-tab-heading" href="out.gohtml" id="tab-limiteds" >
+                    <span class="rbx-lead">Logout</span>
+                    <span class="rbx-tab-subtitle"></span>
+                </a>
+    </li>
+</ul>
+
+
+<div class="main" id="iframe">
+
+
+
+
+  
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/Content/AssetsBS3/img/favicon.ico" rel="icon">
+
+    <title>Registration Phase</title>
+
+    <script language="JavaScript" src="jsbn.js" type="text/javascript"></script>
+    <script language="JavaScript" src="jsbn2.js" type="text/javascript"></script>
+    <script language="JavaScript" src="prng4.js" type="text/javascript"></script>
+    <script language="JavaScript" src="rng.js" type="text/javascript"></script>
+    <script language="JavaScript" src="ec.js" type="text/javascript"></script>
+    <script language="JavaScript" src="sec.js" type="text/javascript"></script>
+
+ 
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css">
+    <link href="css/signin.css" rel="stylesheet">
+
+<style type="text/css">
+.videoWrapper {
+    position: relative;
+    padding-bottom: 10%; /* 16:9 */
+    padding-top: 300px;
+    height: 100%;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+}
+</style>
+
+
+  
+
+
+
+
+  
+
+<div class="container">
+  
+        
+    
+
+    <form name="form1" class="form-signin" id="form1" role="form" action="Registration1.php" enctype="multipart/form-data" method="post" target="form_iframe">
+    <fieldset>
+
+
+    <label>Smartcard ID：</label>
+    <input name="RC_id" class="form-control" id="RC_id" type="text">
+    <br>
+
+
+    <label>Smartcard Password：</label>
+    <input name="RC_PS" class="form-control" id="RC_PS" type="text">
+    <br>
+
+
+
+
+
+
+
+
+    <legend>Registration Phase</legend>
+    <label>ID：</label>
+    <input name="C_id" class="form-control" id="C_id" type="text">
+    <br>
+
+    
+
+
+    <label>Server :</label>
+    
+
+
+    <select name="C_server" class="form-control">
+
+
+
+
+
+
+<!--?php for ($i=0;$i<$total_records;$i++) {$row = mysql_fetch_assoc($result); //將陣列以欄位名索引   ?-->
+
+<option value="">  </option>       
+     
+
+<!--?php    }   ?-->
+
+    </select>
+
+    <br>
+
+    <input name="submit" class="btn btn-lg btn-primary btn-block" id="submit" type="submit" value="Register">
+
+
+
+    </fieldset>
+    </form>
+
+    </div>
+
+      <script src="/Scripts/AssetsBS3/ie10-viewport-bug-workaround.js"></script>
+
+      <div class="videoWrapper">
+      <iframe name="form_iframe" width="0" height="0" style="border: double rgb(25, 25, 112); border-image: none;"></iframe>
+      </div>
+  
+  
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
